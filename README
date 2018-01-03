@@ -1,0 +1,55 @@
+================================================================================
+        Predicting p-type half-Heusler thermoelectrics using Machine Learning
+                 --- README / Introduction ----
+                Dr. Sandip Bhattacharya, December - 2017
+================================================================================
+
+MOTIVATION- Half-Heuslers (HHs) are a novel class of alloys that can give multiple functionalities. HHs with a valence electron count 8 or 18 are semiconductors, despite them being constituted by three metal atoms! Recently (J. Mater. Chem. C, 4, 11261-11268, 2016) I predicted novel p-type semiconducting HH candidates for thermoelectric (TE) applications, using big data techniques.
+In the present project, machine learning models will be implemented using Python (sklearn and pandas) 
+a) to have a better understanding of the factors which result in HHs with good transport properties
+b) with this understanding machine learning models could design novel futuristic half-Heusler materials.
+
+***
+Q- What are TE materials and why are they important?
+A- TE materials produce an electrical potential difference as a result of a temperature bias across them, due to the Seebeck effect. The temperature bias can be generated from the large quantities of waste heat generated in automobiles, in industries and homes. Energy generated from TE materials is therefore renewable. My research goal is to discover novel TE materials that are non-toxic and cheap.
+
+Q-Why are computational big data and machine learning techniques crucial to design new materials?
+A-When the objective is to discover novel technologically relevant materials, one needs these methods due to the large datasets investigated. In material science this means that there is a large phase space to be explored and which cannot be done experimentally.
+I have lead several such big data projects that have identified novel materials for TE applications, summarized in my following publications and patents:
+
+a)Ternary sulfides: 
+  Journal of Materials Chemistry C 4 (15), 3094-3100 (2016)
+  Journal of Materials Chemistry A 4 (28), 11086-11093 (2016)
+  WO Patent WO2017013348
+b)HHs: 
+  Journal of Materials Chemistry, 4, 11261-11268, (201)6
+***
+
+MACHINE LEARNING DETAILS- The code is demonstrated for Random Forest regression, Neural Networks as well as Support Vector Machines (SVM). It is focused on p-type thermoelectrics but can be extended also to n-type and any compound classes.
+
+DATA SETS (INPUT)- This is constructed from my previous work: J. Mater. Chem. C, 4, 11261-11268, 2016. The input parameters are:
+HH name
+E_LW (energy difference between L and W point of the highest Valence Band)
+E_GW (energy difference between Gamma and W point of the highest Valence Band)
+E_WW (reference:0)
+ptype zT (label)
+bandgap
+
+The datasets were evaluated from Density Functional Theory calculations. Gamma, L and W are high symmetry points in the fcc crystal of HHs. zT is the figure of merit for TE materials evauated from Boltzmann's Theory. The features are illustrated for a HH in feature_bs.pdf
+
+================================================================================
+                     CONTENT OF THE PROJECTS FOLDER:
+================================================================================
+README
+code.py (main Python ML code)
+pockets_zT.dat (input dataset for HHs)
+feature_bs.pdf (demonstration of input data for a compound)
+correlation.pdf (correlations between the ML and actual datasets)
+graph.pdf (output: ML feature importances for electronic properties)
+
+================================================================================
+                     FURTHER INFO:
+================================================================================
+Please contact me at sbhattac@tcd.ie for any further information.
+Additionally, you may be interested in my other machine learning projects on ternary sulfides containing 1400 datasets.
+(also available on GitHub)
