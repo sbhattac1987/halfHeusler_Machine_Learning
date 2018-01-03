@@ -37,6 +37,8 @@ bandgap
 
 The datasets were evaluated from Density Functional Theory calculations. Gamma, L and W are high symmetry points in the fcc crystal of HHs. zT is the figure of merit for TE materials evauated from Boltzmann's Theory. The features are illustrated for a HH in feature_bs.pdf
 
+OUTCOME AND CONCLUSIONS- This is a demonstrator project illustrating the power of Machine learning models in material science in understanding datasets and further materials prediction. The feature importance (in graph.pdf) gives interesting results. zT_cutoff is the value above which the label is taken 1 (i.e. high zT). Every value on x axis is its own machine learning model. Note that bandgap is an important factor for zT>1.6 (high bandgap leads to low zT) and zT<0.6 (bandgap close to 0 leads to low zT). For intermediate regions however it is the E_GW energy difference that governs zT
+
 ================================================================================
                      CONTENT OF THE PROJECTS FOLDER:
 ================================================================================
